@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* img{
+            width: 250px;
+        } */
+    </style>
+</head>
+<body>
+
+    <!-- <div id="div1">
+        Kaan Academy
+    </div> -->
+
+    <!-- <img src="apocalyptic.png" alt=""> -->
+    <!-- <input class="input1" type="text" value="bir isim giriniz!"> -->
+
+
+    <p onclick="saatbasla()">tarih</p>
+    <p></p>
+    <p></p>
+    <script>
+        var tarihparagrafi=document.getElementsByTagName("P")[1];
+
+        function saatbasla(){
+            setInterval(tarihigoster,1000);
+        }
+        function tarihigoster(){
+            var tarih= new Date();
+            tarihparagrafi.innerHTML=tarih.getHours()+": "+tarih.getMinutes()+" :"+tarih.getSeconds();
+        }     
+
+        // var divimiz=document.getElementById("div1");
+        // var resim=document.getElementsByTagName("img")[0];
+        // resim.onload=function(){
+        // alert("resim yüklendi");
+        // };
+
+
+
+        // divimiz.onmouseover=function(){
+        //     divimiz.innerHTML="mouse üzerine geldi";
+        // };
+        // divimiz.onmouseout=function(){
+        //     divimiz.innerHTML="Kaan Academy";
+        // };
+        // divimiz.onmousedown=function(){
+        //     divimiz.innerHTML="mouse'a basıldı";
+        // };
+        // divimiz.onmouseup=function(){
+        //     divimiz.innerHTML="mouse'dan el kaldırıldı ";
+        // };
+
+
+
+        // var divimiz=document.getElementById("div1");
+        // var resim=document.getElementsByTagName("img")[0];
+
+
+        // var input=document.getElementsByClassName("input1")[0];
+
+        // input.onchange=function(){
+        //     input.value=input.value.toUpperCase();
+        // }
+
+
+        
+        // var input=document.getElementsByClassName("input1")[0];
+
+        // input.onkeyup=function(){
+        //     input.value=input.value.toUpperCase();
+        // }
+
+        // var input=document.getElementsByClassName("input1")[0];
+
+        // input.onblur=function(){
+        //     input.value="değişti";
+        // }
+
+        // input.onfocus=function(){
+        //     input.value="focuslandı";
+        // }
+
+        // input.onkeydown=function(){
+        //     input.value=input.value.toUpperCase();
+        // }
+
+
+
+        // divimiz.onclick=function(){
+        //     divimiz.innerHTML="div'e tıklandı!"
+        // }
+        // resim.onclick=function(){
+        // resim.src="blackangel.png";
+        // };
+    </script>
+</body>
+</html>

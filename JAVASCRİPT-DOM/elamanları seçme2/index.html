@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+         
+
+
+
+
+
+
+
+
+    <script>
+
+        var header=document.getElementsByTagName("header");
+        for(var i=0;i<4;i++){
+            header[0].innerHTML+="<p></p>";
+        }
+
+        var headerincocuklari=header[0].childNodes;
+        for(var i=0;i<headerincocuklari.lenght-1;i++){
+            headerincocuklari[i].innerHTML="p"+i;
+        }
+
+
+
+
+
+        // var bodyimiz=document.body;
+        // for(var i=0;i<4;i++){
+        //     bodyimiz.innerHTML+="<p></p>";
+        // }
+
+        // var bodynincocuklari=bodyimiz.childNodes;
+        // for(var i=0;i<bodynincocuklari.lenght-1;i++){
+        //     bodynincocuklari[i].innerHTML="p"+i;
+        // }
+
+        // var paragraflar=document.getElementsByTagName("P")
+        // for(var i=0; i<paragraflar.length; i++){
+        //     paragraflar[i].innerHTML="paragraf sırası:"+(i+1);
+        // }
+    </script>
+</body>
+</html>

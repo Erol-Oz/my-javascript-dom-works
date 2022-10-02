@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- DOM Document Object Model   Belge Objesi Modeli -->
+    <!-- <h1>Günün menüsü</h1>
+    <p>Bugün güzel yemeklerden bir menü hazırladık</p> -->
+
+
+    <script>
+        // document.title="menü sayfası";
+        // document.body.innerHTML="<p style=\"color:red;\">kaan academy</p>";
+
+        function saatgoster(){
+            var tarih= new Date();
+
+            var saat=tarih.getHours();
+            var dakika=tarih.getMinutes();
+            var saniye=tarih.getSeconds();
+            document.body.innerHTML=saat+":"+dakika+":"+saniye;
+            document.title=saat+":"+dakika+":"+saniye;
+        }
+        setInterval(saatgoster,1000);
+    </script>
+
+
+
+</body>
+
+</html>

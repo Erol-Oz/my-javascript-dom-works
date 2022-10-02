@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="baslikk">
+
+    </div>
+    <div class="baslik">
+
+    </div>
+    <div class="baslik">
+
+    </div>
+
+
+
+
+
+
+    <script>
+        document.getElementById("baslikk").innerHTML="<p>kaan academy</p>"
+        document.getElementsByClassName("baslik")[0].innerHTML="<p>kaan academy</p>"
+        document.getElementsByClassName("baslik")[1].innerHTML="<p>kaan academy</p>"
+        document.getElementsByTagName("div")[0].innerHTML="<p>div1</p>"
+        document.getElementsByTagName("div")[1].innerHTML="<p>div2</p>"
+
+        var divlerimiz=document.getElementsByTagName("div");
+        for(var i=0;i<divlerimiz.length;i++){
+            divlerimiz[i].innerHTML="div"+i;
+        }
+
+    </script>
+</body>
+</html>
